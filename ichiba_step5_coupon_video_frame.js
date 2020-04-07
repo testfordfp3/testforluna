@@ -155,7 +155,7 @@
 		});
     */
     
-    display_step5_coupon({});
+    display_step5_coupon({'seg_id':['12345', 'st5_techtest_250859']});
 	}
 	sendRequest();
 
