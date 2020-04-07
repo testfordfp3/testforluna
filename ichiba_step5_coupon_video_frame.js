@@ -35,7 +35,7 @@
 			return;
 		}
 
-		rtn['seg_id'] = 'st5_techtest_250859';
+		//rtn['seg_id'] = 'st5_techtest_250859';
 		
 		if (!rtn) {
 			rtn = {};
