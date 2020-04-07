@@ -155,7 +155,7 @@
 		});
     */
     
-    display_step5_coupon("");
+    display_step5_coupon({});
 	}
 	sendRequest();
 
