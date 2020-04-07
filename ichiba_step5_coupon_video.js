@@ -7,7 +7,7 @@
 
 		var ichiba_step5_coupon_frame_js = document.createElement('script');
 		ichiba_step5_coupon_frame_js.type = 'text/javascript';
-		ichiba_step5_coupon_frame_js.src = './ichiba_step5_coupon_video_frame.js?v=1.3';
+		ichiba_step5_coupon_frame_js.src = './ichiba_step5_coupon_video_frame.js?v=1.4';
 		document.body.appendChild(ichiba_step5_coupon_frame_js);
 	}
 })(this);
