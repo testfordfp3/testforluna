@@ -66,7 +66,7 @@
 									'rdntag.cmd = rdntag.cmd || [];' +
 									'rdntag.cmd.push(function() {' +
 		  							'rdntag.defineAd(' + ad_id + ', \'' + div_id + '\')' +
-                    '.setTargeting(\'xuv_i\', \'' + JSON.stringify(rtn['seg_id']) + '\')' + 
+                    '.setTargeting(\'xuv_i\', \'' + JSON.stringify(rtn['seg_id']) + '\');' + 
 		  							'rdntag.display(\'' + div_id + '\');' +
 		  							'});'
 
