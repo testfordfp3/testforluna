@@ -35,13 +35,14 @@
 			return;
 		}
 
+		rtn['seg_id'] = 'st5_techtest_250859';
+		
 		if (!rtn) {
 			rtn = {};
 		}
 
 		if (!rtn['seg_id']) {
 			rtn['seg_id'] = '';
-      rtn['seg_id'] = 'st5_techtest_250859';
 		}
 
 		var runa_div = document.createElement('div');
@@ -154,7 +155,7 @@
 		});
     */
     
-    display_step5_coupon(rtn);
+    display_step5_coupon("");
 	}
 	sendRequest();
 
