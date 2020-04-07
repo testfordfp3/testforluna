@@ -56,6 +56,8 @@
 
 
 		var rdn_tag_script = document.createElement('script');
+		var seg_id = JSON.stringify(rtn['seg_id']).replace(/"/g,'\'');
+
 		
 		//type
 		rdn_tag_script.type = "text/javascript"
@@ -66,7 +68,7 @@
 									'rdntag.cmd = rdntag.cmd || [];' +
 									'rdntag.cmd.push(function() {' +
 		  							'rdntag.defineAd(' + ad_id + ', \'' + div_id + '\')' +
-                    '.setTargeting(\'xuv_i\', \'' + JSON.stringify(rtn['seg_id']) + '\');' + 
+		    			                                '.setTargeting(\'xuv_i\', \'' + seg_id + '\');' + 
 		  							'rdntag.display(\'' + div_id + '\');' +
 		  							'});'
 
