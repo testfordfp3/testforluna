@@ -1,0 +1,65 @@
+<!doctype html>
+<html ⚡>
+  <head>
+    <meta charset="utf-8">
+    <title>Amp Ad Common Example/Debug</title>
+    <link rel="canonical" href="http://nonblocking.io/">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-ad-custom" src="https://cdn.ampproject.org/v0/amp-ad-custom-0.1.js"></script>
+  </head>
+  <body>
+    <h1>Amp Ad Rakuten Example/Debug</h1>
+
+    <h2>Fixed size: 300x250 with all paramters on dev</h2>
+      <amp-ad
+      width="300"
+      height="250"
+      type="rakutenunifiedads"
+      data-id="63"
+      data-env="dev"
+      data-genre='{"master_id":1,"code":"100371","match":"children"}'
+      data-ifa="DUMMY_IFA"
+      data-targeting='{"k1":"dummy-key","k2":["male", "female"]}'
+      data-responsive="true"
+    >
+    </amp-ad>  
+
+    <h2>Fixed size: 300x250 on dev, should be displayed</h2>
+      <amp-ad
+      width="300"
+      height="250"
+      type="rakutenunifiedads"
+      data-id="63"
+      data-env="dev"
+    >
+    </amp-ad>  
+
+  <h2>Fixed size: 300x250 with all paramters on stg</h2>
+    <amp-ad
+    width="300"
+    height="250"
+    type="rakutenunifiedads"
+    data-id="115"
+    data-env="stg"
+    data-genre='{"master_id":1,"code":"100371","match":"children"}'
+    data-ifa="DUMMY_IFA"
+    data-targeting='{"k1":"dummy-key","k2":["male", "female"]}'
+    data-responsive="true"
+  >
+  </amp-ad>  
+
+  <h2>Fixed size: 300x250 on stg, should be displayed</h2>
+    <amp-ad
+    width="300"
+    height="250"
+    type="rakutenunifiedads"
+    data-id="115"
+    data-env="stg"
+  >
+  </amp-ad>  
+
+  </body>
+</html>
