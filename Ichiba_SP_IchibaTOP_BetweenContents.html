@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>TDA Tag Test Page</title>
+</head>
+<body>
+
+<hr>
+<h1>AD Image Part</h1>
+<hr>
+	
+<!-- Ichiba - PRD - IchibaTOP - SP - WideBanner - 1280x200（Please put this div to the place where want to display the AD） -->
+<div id="rdn-adspot-Ichiba_SP_IchibaTOP_BetweenContents-21369360" style="padding:8px 16px 16px"></div>
+
+	
+<hr>	
+<h1 Script Part>
+<hr>
+	
+<!-- ScriptTag(Please put this script part just before </body>) -->
+<script>
+	var rdntag = rdntag || {};
+	rdntag.cmd = rdntag.cmd || [];
+	rdntag.cmd.push(function() {
+		rdntag
+			.defineAdCode("Ichiba_SP_IchibaTOP_BetweenContents", "rdn-adspot-Ichiba_SP_IchibaTOP_BetweenContents-21369360")
+			.setResponsive(true)
+			.enableSingleRequest();
+
+		document.getElementById('rdn-adspot-Ichiba_SP_IchibaTOP_BetweenContents-21369360').addEventListener('slotResponseReceived', function(e) {
+			if (e && e.detail && e.detail.adReturned === false) {
+				var a = document.getElementById('rdn-adspot-Ichiba_SP_IchibaTOP_BetweenContents-21369360');
+				a.style.padding = "0px";
+			}
+		});
+		
+		rdntag.displayWithSingleRequest();
+	});
+</script>
+<script src="https://s-cdn.rmp.rakuten.co.jp/js/aa.js" async></script>
+
+</body>
+</html>
