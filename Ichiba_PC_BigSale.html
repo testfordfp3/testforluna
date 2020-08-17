@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>TDA Tag Test Page</title>
+</head>
+<body>
+
+<hr>
+<h1>AD Image Part</h1>
+<hr>
+	
+<!-- Div Tag (Please put this div to the place where want to display the AD) -->
+<div id="rdn-adspot-Ichiba_PC_BigSale_Middlecontents-37700788" class="riMb15"></div>
+
+<div id="rdn-adspot-Ichiba_PC_BigSaleMarathon_LeftNavi-71004936" style="margin-top: 30px;"></div>
+
+	
+<hr>	
+<h1 Script Part>
+<hr>
+
+<!-- Script Tag (Please put this script part just before </body>) -->
+<script>
+	var rdntag = rdntag || {};
+	rdntag.cmd = rdntag.cmd || [];
+	rdntag.cmd.push(function() {
+		rdntag
+			.defineAdCode("Ichiba_PC_BigSale_Middlecontents", "rdn-adspot-Ichiba_PC_BigSale_Middlecontents-37700788")
+			.enableSingleRequest();
+		document.getElementById('rdn-adspot-Ichiba_PC_BigSale_Middlecontents-37700788').addEventListener('slotResponseReceived', function(e) {
+			if (e && e.detail && e.detail.adReturned === true) {
+				var a = document.getElementById('rdn-adspot-Ichiba_PC_BigSale_Middlecontents-37700788');
+				var b = document.createElement("h3") ;
+				b.classList.add("ss-headline");
+				b.textContent = "見出し";
+				a.before(b);
+			}
+		});
+		rdntag
+			.defineAdCode("Ichiba_PC_BigSaleMarathon_LeftNavi", "rdn-adspot-Ichiba_PC_BigSaleMarathon_LeftNavi-71004936")
+			.enableSingleRequest();
+		document.getElementById('rdn-adspot-Ichiba_PC_BigSaleMarathon_LeftNavi-71004936').addEventListener('slotResponseReceived', function(e) {
+			if (e && e.detail && e.detail.adReturned === false) {
+				var a = document.getElementById('rdn-adspot-Ichiba_PC_BigSaleMarathon_LeftNavi-71004936');
+				a.style.marginTop = "0px";
+			}
+		});
+		rdntag.displayWithSingleRequest();
+	});
+</script>
+<script src="https://s-cdn.rmp.rakuten.co.jp/js/aa.js" async></script>
+</body>
+</html>
