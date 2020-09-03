@@ -43,6 +43,10 @@
 <div id="rdn-adspot-Ichiba_PC_Supersale_MidBanner-45032069-2"></div><br />
 18(MidBanner<br />
 <div id="rdn-adspot-Ichiba_PC_Supersale_MidBanner-45032069-3"></div><br />
+19(TDA枠Middlecontents<br />
+<div id="rdn-adspot-Ichiba_PC_BigSale_Middlecontents-37700788" class="riMb15"></div>
+20(TDA枠LeftNavi<br />
+<div id="rdn-adspot-Ichiba_PC_BigSaleMarathon_LeftNavi-71004936" style="margin-top: 30px;"></div>
 
 <script>
 var rdntag = rdntag || {};
@@ -100,13 +104,6 @@ rdntag.cmd.push(function() {
   rdntag
     .defineAdCode("Ichiba_PC_Supersale_LeftTopBooster", "rdn-adspot-Ichiba_PC_Supersale_LeftTopBooster-82059021")
     .enableSingleRequest();
-
-  rdntag.displayWithSingleRequest();
-});
-	
-var rdntag = rdntag || {};
-rdntag.cmd = rdntag.cmd || [];
-rdntag.cmd.push(function() {
   rdntag
     .defineAdCode("Ichiba_PC_Supersale_MidBanner", "rdn-adspot-Ichiba_PC_Supersale_MidBanner-45032069-1")
     .enableSingleRequest();
@@ -116,6 +113,30 @@ rdntag.cmd.push(function() {
   rdntag
     .defineAdCode("Ichiba_PC_Supersale_MidBanner", "rdn-adspot-Ichiba_PC_Supersale_MidBanner-45032069-3")
     .enableSingleRequest();
+  rdntag
+    .defineAdCode("Ichiba_PC_BigSale_Middlecontents", "rdn-adspot-Ichiba_PC_BigSale_Middlecontents-37700788")
+    .enableSingleRequest();
+
+  document.getElementById('rdn-adspot-Ichiba_PC_BigSale_Middlecontents-37700788').addEventListener('slotResponseReceived', function(e) {
+    if (e && e.detail && e.detail.adReturned === true) {
+      var a = document.getElementById('rdn-adspot-Ichiba_PC_BigSale_Middlecontents-37700788');
+      var b = document.createElement("h3") ;
+      b.classList.add("ss-headline");
+      b.textContent = "sample title";
+      a.before(b);
+    }
+  });
+
+  rdntag
+    .defineAdCode("Ichiba_PC_BigSaleMarathon_LeftNavi", "rdn-adspot-Ichiba_PC_BigSaleMarathon_LeftNavi-71004936")
+    .enableSingleRequest();
+
+  document.getElementById('rdn-adspot-Ichiba_PC_BigSaleMarathon_LeftNavi-71004936').addEventListener('slotResponseReceived', function(e) {
+    if (e && e.detail && e.detail.adReturned === false) {
+      var a = document.getElementById('rdn-adspot-Ichiba_PC_BigSaleMarathon_LeftNavi-71004936');
+      a.style.marginTop = "0px";
+    }
+  });
 
   rdntag.displayWithSingleRequest();
 });
