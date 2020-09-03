@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -7,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
 </head>
 <body>
+
 1(FooterBanner<br />
 <div id="rdn-adspot-Ichiba_SP_Supersale_FooterBanner-60717136-1"></div><br />
 2(FooterBanner<br />
@@ -43,8 +43,9 @@
 <div id="rdn-adspot-Ichiba_SP_Supersale_MidBanner-90834947-3"></div><br />
 18(CarouselRect<br />
 <div id="rdn-adspot-Ichiba_SP_Supersale_CarouselRect-55575827"></div><br />
-	
-	
+19(TDA枠Middlecontents<br />
+<div id="rdn-adspot-Ichiba_SP_BigSale_Middlecontents-49558970" class="riMb15" style="padding:0 16px"></div>
+
 <script>
 var rdntag = rdntag || {};
 rdntag.cmd = rdntag.cmd || [];
@@ -116,13 +117,6 @@ rdntag.cmd.push(function() {
     .defineAdCode("Ichiba_SP_Supersale_CarouselRect", "rdn-adspot-Ichiba_SP_Supersale_CarouselRect-55575827")
     .setResponsive(true)
     .enableSingleRequest();
-
-  rdntag.displayWithSingleRequest();
-});
-	
-var rdntag = rdntag || {};
-rdntag.cmd = rdntag.cmd || [];
-rdntag.cmd.push(function() {
   rdntag
     .defineAdCode("Ichiba_SP_Supersale_MidBanner", "rdn-adspot-Ichiba_SP_Supersale_MidBanner-90834947-1")
     .setResponsive(true)
@@ -135,13 +129,27 @@ rdntag.cmd.push(function() {
     .defineAdCode("Ichiba_SP_Supersale_MidBanner", "rdn-adspot-Ichiba_SP_Supersale_MidBanner-90834947-3")
     .setResponsive(true)
     .enableSingleRequest();
+  rdntag
+    .defineAdCode("Ichiba_SP_BigSale_Middlecontents", "rdn-adspot-Ichiba_SP_BigSale_Middlecontents-49558970")
+    .setResponsive(true)
+    .enableSingleRequest();
+  document.getElementById('rdn-adspot-Ichiba_SP_BigSale_Middlecontents-49558970').addEventListener('slotResponseReceived', function(e) {
+    if (e && e.detail && e.detail.adReturned === true) {
+      var a = document.getElementById('rdn-adspot-Ichiba_SP_BigSale_Middlecontents-49558970');
+      var b = document.createElement("h3") ;
+      b.classList.add("ss-headline");
+      b.textContent = "sample title";
+      a.before(b);
+    } else {
+      var a = document.getElementById('rdn-adspot-Ichiba_SP_BigSale_Middlecontents-49558970');
+      a.style.padding = "0px";
+    }
+  });
 
   rdntag.displayWithSingleRequest();
 });
 </script>
 <script src="https://s-cdn.rmp.rakuten.co.jp/js/aa.js" async></script>
-
-
 
 </body>
 </html>
