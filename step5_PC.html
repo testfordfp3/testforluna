@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>RUNA Tag Test</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+</head>
+<body>
+
+<div id="rdn-adspot-Ichiba_PC_Step5_Middlecontents-17274585"></div>
+<div id="rdn-adspot-Ichiba_PC_Step5_PageBottom-42917317"></div>
+
+<script>
+
+	grp15_ias_prm = {
+		shopid: ['270202'],
+		itemid: ['_basketchk01:10000001'],
+		genreid: ['300332']
+	};
+
+var rdntag = rdntag || {};
+rdntag.cmd = rdntag.cmd || [];
+rdntag.cmd.push(function() {
+  rdntag
+    .defineAdCode("Ichiba_PC_Step5_Middlecontents", "rdn-adspot-Ichiba_PC_Step5_Middlecontents-17274585")
+    .setTargeting("step5_shopid", grp15_ias_prm['shopid'])
+    .setTargeting("step5_itemid", grp15_ias_prm['itemid'])
+    .setTargeting("step5_genrecode", grp15_ias_prm['genreid'])
+    .enableSingleRequest();
+
+  rdntag
+    .defineAdCode("Ichiba_PC_Step5_PageBottom", "rdn-adspot-Ichiba_PC_Step5_PageBottom-42917317")
+    .enableSingleRequest();
+
+  rdntag.displayWithSingleRequest();
+});
+</script>
+<script src="https://s-cdn.rmp.rakuten.co.jp/js/aa.js" async></script>
+
+</body>
+</html>
