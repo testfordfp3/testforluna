@@ -134,7 +134,7 @@ rdntag.cmd.push(function() {
     .setResponsive(true)
     .enableSingleRequest();
 	
-  //if (document.getElementById('rdn-adspot-Ichiba_SP_BigSale_Middlecontents-49558970') != null) {
+  if (document.getElementById('rdn-adspot-Ichiba_SP_BigSale_Middlecontents-49558970') != null) {
     document.getElementById('rdn-adspot-Ichiba_SP_BigSale_Middlecontents-49558970').addEventListener('slotResponseReceived', function(e) {
       if (e && e.detail && e.detail.adReturned === true) {
         var a = document.getElementById('rdn-adspot-Ichiba_SP_BigSale_Middlecontents-49558970');
@@ -147,7 +147,7 @@ rdntag.cmd.push(function() {
         a.style.padding = "0px";
       }
     });
-  //}
+  }
 
   rdntag.displayWithSingleRequest();
 });
