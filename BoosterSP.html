@@ -312,6 +312,8 @@
 <div id="rdn-adspot-Ichiba_SP_Supersale_MidBanner-90834947-2" style="padding:0 16px"></div><br />
 3(MidBanner<br />
 <div id="rdn-adspot-Ichiba_SP_Supersale_MidBanner-90834947-3" style="padding:0 16px"></div><br />
+4(MidBanner<br />
+<div id="rdn-adspot-Ichiba_SP_Supersale_MidBanner-90834947-4" style="padding:0 16px"></div><br />
 301	<br>
 302	<br>
 303	<br>
@@ -772,7 +774,7 @@
 758	<br>
 759	<br>
 760	<br>
-4(TDA枠Middlecontents<br />
+5(TDA枠Middlecontents<br />
 <div id="rdn-adspot-Ichiba_SP_BigSale_Middlecontents-49558970" class="riMb15" style="padding:0 16px"></div>
 761	<br>
 762	<br>
@@ -784,11 +786,11 @@
 768	<br>
 769	<br>
 770	<br>
-5(FooterBooster01<br />
+6(FooterBooster01<br />
 <div id="rdn-adspot-Ichiba_SP_Supersale_FooterBooster01-49041111" style="padding:0 16px"></div><br />
-6(FooterBooster02<br />
+7(FooterBooster02<br />
 <div id="rdn-adspot-Ichiba_SP_Supersale_FooterBooster02-21994356" style="padding:0 16px"></div><br />
-7(FooterBooster03<br />
+8(FooterBooster03<br />
 <div id="rdn-adspot-Ichiba_SP_Supersale_FooterBooster03-84974428" style="padding:0 16px"></div><br />
 771	<br>
 772	<br>
@@ -821,27 +823,23 @@
 799	<br>
 800	<br>
 801	<br>	
-8(FooterBanner<br />
-<div id="rdn-adspot-Ichiba_SP_Supersale_FooterBanner-60717136-1" style="padding:0 16px"></div><br />
 9(FooterBanner<br />
-<div id="rdn-adspot-Ichiba_SP_Supersale_FooterBanner-60717136-2" style="padding:0 16px"></div><br />
+<div id="rdn-adspot-Ichiba_SP_Supersale_FooterBanner-60717136-1" style="padding:0 16px"></div><br />
 10(FooterBanner<br />
-<div id="rdn-adspot-Ichiba_SP_Supersale_FooterBanner-60717136-3" style="padding:0 16px"></div><br />
+<div id="rdn-adspot-Ichiba_SP_Supersale_FooterBanner-60717136-2" style="padding:0 16px"></div><br />
 11(FooterBanner<br />
-<div id="rdn-adspot-Ichiba_SP_Supersale_FooterBanner-60717136-4" style="padding:0 16px"></div><br />
+<div id="rdn-adspot-Ichiba_SP_Supersale_FooterBanner-60717136-3" style="padding:0 16px"></div><br />
 12(FooterBanner<br />
-<div id="rdn-adspot-Ichiba_SP_Supersale_FooterBanner-60717136-5" style="padding:0 16px"></div><br />
+<div id="rdn-adspot-Ichiba_SP_Supersale_FooterBanner-60717136-4" style="padding:0 16px"></div><br />
 13(FooterBanner<br />
-<div id="rdn-adspot-Ichiba_SP_Supersale_FooterBanner-60717136-6" style="padding:0 16px"></div><br />
+<div id="rdn-adspot-Ichiba_SP_Supersale_FooterBanner-60717136-5" style="padding:0 16px"></div><br />
 14(FooterBanner<br />
-<div id="rdn-adspot-Ichiba_SP_Supersale_FooterBanner-60717136-7" style="padding:0 16px"></div><br />
+<div id="rdn-adspot-Ichiba_SP_Supersale_FooterBanner-60717136-6" style="padding:0 16px"></div><br />
 15(FooterBanner<br />
-<div id="rdn-adspot-Ichiba_SP_Supersale_FooterBanner-60717136-8" style="padding:0 16px"></div><br />
+<div id="rdn-adspot-Ichiba_SP_Supersale_FooterBanner-60717136-7" style="padding:0 16px"></div><br />
 16(FooterBanner<br />
-<div id="rdn-adspot-Ichiba_SP_Supersale_FooterBanner-60717136-9" style="padding:0 16px"></div><br />
-17(FooterBanner<br />
-<div id="rdn-adspot-Ichiba_SP_Supersale_FooterBanner-60717136-10" style="padding:0 16px"></div><br />
-18(FooterBanner2<br />
+<div id="rdn-adspot-Ichiba_SP_Supersale_FooterBanner-60717136-8" style="padding:0 16px"></div><br />
+17(FooterBanner2<br />
 <div id="rdn-adspot-Ichiba_SP_Supersale_FooterBanner2-12208300" style="padding:0 16px"></div><br />
 
 
@@ -864,6 +862,10 @@ rdntag.cmd.push(function() {
     .defineAdCode("Ichiba_SP_Supersale_MidBanner", "rdn-adspot-Ichiba_SP_Supersale_MidBanner-90834947-3")
     .setResponsive(true)
     .enableSingleRequest();
+  rdntag
+    .defineAdCode("Ichiba_SP_Supersale_MidBanner", "rdn-adspot-Ichiba_SP_Supersale_MidBanner-90834947-4")
+    .setResponsive(true)
+    .enableSingleRequest();
   rdntag.displayWithSingleRequest();
 });
 	
@@ -871,6 +873,37 @@ var rdntag = rdntag || {};
 rdntag.cmd = rdntag.cmd || [];
 rdntag.cmd.push(function() {
   rdntag.enableLazyLoad(200);
+	
+  rdntag
+    .defineAdCode("Ichiba_SP_BigSale_Middlecontents", "rdn-adspot-Ichiba_SP_BigSale_Middlecontents-49558970")
+    .setResponsive(true)
+    .enableSingleRequest();
+  document.getElementById('rdn-adspot-Ichiba_SP_BigSale_Middlecontents-49558970').addEventListener('slotResponseReceived', function(e) {
+    if (e && e.detail && e.detail.adReturned === true) {
+      var a = document.getElementById('rdn-adspot-Ichiba_SP_BigSale_Middlecontents-49558970');
+      var b = document.createElement("h3") ;
+      b.classList.add("ss-headline");
+      b.textContent = "注目アイテムピックアップ";
+      a.before(b);
+    } else {
+      var a = document.getElementById('rdn-adspot-Ichiba_SP_BigSale_Middlecontents-49558970');
+      a.style.padding = "0px";
+    }
+  });
+
+  rdntag
+    .defineAdCode("Ichiba_SP_Supersale_FooterBooster01", "rdn-adspot-Ichiba_SP_Supersale_FooterBooster01-49041111")
+    .setResponsive(true)
+    .enableSingleRequest();
+  rdntag
+    .defineAdCode("Ichiba_SP_Supersale_FooterBooster02", "rdn-adspot-Ichiba_SP_Supersale_FooterBooster02-21994356")
+    .setResponsive(true)
+    .enableSingleRequest();
+  rdntag
+    .defineAdCode("Ichiba_SP_Supersale_FooterBooster03", "rdn-adspot-Ichiba_SP_Supersale_FooterBooster03-84974428")
+    .setResponsive(true)
+    .enableSingleRequest();
+
   rdntag
     .defineAdCode("Ichiba_SP_Supersale_FooterBanner", "rdn-adspot-Ichiba_SP_Supersale_FooterBanner-60717136-1")
     .setResponsive(true)
@@ -903,46 +936,11 @@ rdntag.cmd.push(function() {
     .defineAdCode("Ichiba_SP_Supersale_FooterBanner", "rdn-adspot-Ichiba_SP_Supersale_FooterBanner-60717136-8")
     .setResponsive(true)
     .enableSingleRequest();
-  rdntag
-    .defineAdCode("Ichiba_SP_Supersale_FooterBanner", "rdn-adspot-Ichiba_SP_Supersale_FooterBanner-60717136-9")
-    .setResponsive(true)
-    .enableSingleRequest();
-  rdntag
-    .defineAdCode("Ichiba_SP_Supersale_FooterBanner", "rdn-adspot-Ichiba_SP_Supersale_FooterBanner-60717136-10")
-    .setResponsive(true)
-    .enableSingleRequest();
+
   rdntag
     .defineAdCode("Ichiba_SP_Supersale_FooterBanner2", "rdn-adspot-Ichiba_SP_Supersale_FooterBanner2-12208300")
     .setResponsive(true)
     .enableSingleRequest();
-  rdntag
-    .defineAdCode("Ichiba_SP_Supersale_FooterBooster01", "rdn-adspot-Ichiba_SP_Supersale_FooterBooster01-49041111")
-    .setResponsive(true)
-    .enableSingleRequest();
-  rdntag
-    .defineAdCode("Ichiba_SP_Supersale_FooterBooster02", "rdn-adspot-Ichiba_SP_Supersale_FooterBooster02-21994356")
-    .setResponsive(true)
-    .enableSingleRequest();
-  rdntag
-    .defineAdCode("Ichiba_SP_Supersale_FooterBooster03", "rdn-adspot-Ichiba_SP_Supersale_FooterBooster03-84974428")
-    .setResponsive(true)
-    .enableSingleRequest();
-  rdntag
-    .defineAdCode("Ichiba_SP_BigSale_Middlecontents", "rdn-adspot-Ichiba_SP_BigSale_Middlecontents-49558970")
-    .setResponsive(true)
-    .enableSingleRequest();
-  document.getElementById('rdn-adspot-Ichiba_SP_BigSale_Middlecontents-49558970').addEventListener('slotResponseReceived', function(e) {
-    if (e && e.detail && e.detail.adReturned === true) {
-      var a = document.getElementById('rdn-adspot-Ichiba_SP_BigSale_Middlecontents-49558970');
-      var b = document.createElement("h3") ;
-      b.classList.add("ss-headline");
-      b.textContent = "注目アイテムピックアップ";
-      a.before(b);
-    } else {
-      var a = document.getElementById('rdn-adspot-Ichiba_SP_BigSale_Middlecontents-49558970');
-      a.style.padding = "0px";
-    }
-  });
   rdntag.displayWithSingleRequest();
 });
 </script>
